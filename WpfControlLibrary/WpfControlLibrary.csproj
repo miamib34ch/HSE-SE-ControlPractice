@@ -51,6 +51,9 @@
     <Compile Include="RGBBox.xaml.cs">
       <DependentUpon>RGBBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Clock.xaml.cs">
+      <DependentUpon>Clock.xaml</DependentUpon>
+    </Compile>
     <Page Include="RGB.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -60,6 +63,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="RGBBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Clock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:TestControlAppWPF"
         xmlns:WpfControlLibrary="clr-namespace:WpfControlLibrary;assembly=WpfControlLibrary" x:Class="TestControlAppWPF.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="193" Width="264">
-    <Grid Margin="0,0,0,-6">
+        Title="MainWindow" Height="550" Width="327">
+    <Grid Margin="0,0,0,4">
         <WpfControlLibrary:RGB x:Name="rgb" HorizontalAlignment="Left" VerticalAlignment="Top" ColorImg="Black"/>
         <Label x:Name="count" Content="Цвет поменялся 0 раз" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <WpfControlLibrary:Clock HorizontalAlignment="Center" Margin="0,158,0,0" VerticalAlignment="Top" Height="340" Width="327"/>
     </Grid>
 </Window>
