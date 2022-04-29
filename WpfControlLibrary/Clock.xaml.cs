@@ -55,7 +55,7 @@ namespace WpfControlLibrary
         {
 
             int sec = DateTime.Now.Second;
-            int min = DateTime.Now.Minute;
+            int min = DateTime.UtcNow.AddMinutes(((TimeZoneInfo)slc.SelectedItem).BaseUtcOffset.TotalMinutes).Minute;
             int hour = DateTime.UtcNow.AddHours(((TimeZoneInfo)slc.SelectedItem).BaseUtcOffset.TotalHours).Hour;
 
             var rotateSecondArrow = new RotateTransform();
